@@ -1,0 +1,209 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-dark: #111315;
+  --secondary-dark: #1b1d1f;
+  --primary-gray: #6f757c;
+  --primary-green: #bee3cc;
+  --primary-white: #fef7ee;
+  --primary-yellow: #f6c768;
+  --primary-red: #ed735d;
+}
+
+*,
+::after,
+::before {
+  font-family: "DM Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-white);
+}
+
+p {
+  margin-bottom: 0rem;
+}
+
+body {
+  color: var(--primary-gray);
+  display: grid;
+  place-items: center;
+  background-color: var(--primary-dark);
+  min-height: 100vh;
+  padding-inline: 1.25rem;
+  padding-block-start: 1.25rem;
+  padding-block-end: 3rem;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  display: inline-block;
+  width: 100%;
+  height: 18.75rem;
+  background-image: url("./assets/images/bg-cafe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.main-content {
+  position: relative;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.image {
+  position: absolute;
+  left: 12.75rem;
+  top: 2rem;
+}
+
+.text-white {
+  color: var(--primary-white);
+}
+
+.text-gray {
+  color: var(--primary-gray);
+}
+
+.text-red {
+  color: var(--primary-red);
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.px-8 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+
+.bg-secondary-dark-color {
+  background-color: var(--secondary-dark);
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.main-menu {
+  max-width: 400px;
+}
+
+.display-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.display-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-3 {
+  gap: 0.8rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+}
+
+.btn-c {
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+.bg-primary-gray {
+  background-color: var(--primary-gray);
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.display-grid {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular {
+  position: absolute;
+  color: var(--primary-dark);
+  top: 0.5rem;
+  left: 0.5rem;
+  background-color: var(--primary-yellow);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-weight: bolder;
+  font-size: 0.65rem;
+}
+
+.price {
+  background-color: var(--primary-green);
+  color: var(--primary-dark);
+  font-size: 0.8rem;
+  font-weight: bolder;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.text-medium {
+  font-size: 0.9rem;
+}

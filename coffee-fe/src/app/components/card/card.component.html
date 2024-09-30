@@ -1,0 +1,38 @@
+<div class="bg-secondary-dark-color display-flex-column gap-3">
+  <div class="relative">
+    <img class="rounded-xl" src="{{ coffee.image }}" alt="" />
+    <p class="popular" *ngIf="coffee.popular">Popular</p>
+  </div>
+  <div>
+    <div
+      class="display-flex-row justify-content-space-between align-items-center"
+    >
+      <p class="text-white">{{ coffee.name }}</p>
+      <p class="price">{{ coffee.price }}</p>
+    </div>
+    <div class="display-flex-row align-items-center gap-1 mt-2">
+      <div>
+        <img
+          src="./../../../assets/images/Star_fill.svg"
+          alt=""
+          *ngIf="coffee.rating != null"
+        />
+
+        <img
+          src="./../../../assets/images/Star.svg"
+          alt=""
+          *ngIf="coffee.rating == null"
+        />
+      </div>
+      <div
+        class="display-flex-row align-items-center justify-content-space-between width-100"
+      >
+        <p class="text-white text-medium">
+          {{ coffee.rating }}
+          <span class="text-gray">({{ coffee.votes }} votes)</span>
+        </p>
+        <p class="text-red text-medium" *ngIf="!coffee.available">Sold out</p>
+      </div>
+    </div>
+  </div>
+</div>
