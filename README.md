@@ -14,58 +14,6 @@ All coffee data is fetched from the following public JSON source:
 
 Click here for the JSON data
 
-📸 Screenshots
-
-A sneak peek of the Coffee Collection App interface.
-
-🛠️ How to Run the Project
-Clone the repository:
-
-bash
-Sao chép mã
-git clone https://github.com/your-repository/coffee-collection-app.git
-Navigate into the project directory:
-
-bash
-Sao chép mã
-cd coffee-collection-app
-Install dependencies:
-
-bash
-Sao chép mã
-npm install
-Run the application:
-
-bash
-Sao chép mã
-ng serve
-Open your browser and visit:
-
-arduino
-Sao chép mã
-http://localhost:4200
-🔧 Project Structure
-arduino
-Sao chép mã
-src
-│
-├── app
-│   ├── card
-│   ├── home
-│   ├── services
-│   └── common
-│
-├── assets
-│   └── images
-│
-└── styles.css
-home/ – Home page and main layout of the app.
-card/ – Reusable card components to display individual coffee items.
-services/ – Services used to fetch data from the JSON source.
-common/ – Data models for coffee types.
-📜 License
-This project is open source and available under the MIT License.
-
 Feel free to customize and modify the project. 🍵 Enjoy exploring the Coffee Collection!
 
 Let me know if you'd like to make any changes or additions!
