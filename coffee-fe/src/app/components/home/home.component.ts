@@ -9,6 +9,9 @@ import { CoffeeService } from 'src/app/services/coffee.service';
 })
 export class HomeComponent implements OnInit {
   coffees: Coffee[] = [];
+  filteredCoffees: Coffee[] = [];
+  isProducts: boolean = true;
+  isAvailable: boolean = false;
 
   constructor(private coffeeService: CoffeeService) {}
 
@@ -19,7 +22,19 @@ export class HomeComponent implements OnInit {
   handleCoffees() {
     this.coffeeService.getCoffees().subscribe((data) => {
       this.coffees = data;
-      console.log(this.coffees);
+      this.filteredCoffees = this.coffees;
     });
+  }
+
+  showAllProducts() {
+    this.isProducts = true;
+    this.isAvailable = false;
+    this.filteredCoffees = this.coffees;
+  }
+
+  showAllAvailable() {
+    this.isProducts = false;
+    this.isAvailable = true;
+    this.filteredCoffees = this.coffees.filter((coffee) => coffee.available);
   }
 }

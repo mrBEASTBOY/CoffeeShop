@@ -6,7 +6,7 @@
       <img src="./../../../assets/images/vector.svg" alt="" />
     </div>
     <h1 class="text-white text-align-center relative">Our Collection</h1>
-    <p class="text-gray text-align-center relative">
+    <p class="text-gray text-align-center relative py-md-20">
       Introducing our Coffee Collection, a selection of unique coffees from
       different roast types and origins, expertly roasted in small batches and
       shipped fresh weekly.
@@ -14,16 +14,29 @@
     <div
       class="display-flex-row align-items-center gap-8 justify-content-center mt-4"
     >
-      <a href="#" class="text-sm btn-c bg-primary-gray text-white"
-        >All Products</a
+      <button
+        href="#"
+        class="text-sm btn-c text-white"
+        [ngClass]="{ 'bg-primary-gray': isProducts }"
+        (click)="showAllProducts()"
       >
-      <a href="#" class="text-sm btn-c bg-primary-gray text-white"
-        >Available Now</a
+        All Products
+      </button>
+      <button
+        href="#"
+        class="text-sm btn-c text-white"
+        [ngClass]="{ 'bg-primary-gray': isAvailable }"
+        (click)="showAllAvailable()"
       >
+        Available Now
+      </button>
     </div>
 
     <div class="mt-12 display-grid gap-12">
-      <app-card *ngFor="let coffee of coffees" [coffee]="coffee"></app-card>
+      <app-card
+        *ngFor="let coffee of filteredCoffees"
+        [coffee]="coffee"
+      ></app-card>
     </div>
   </div>
 </div>

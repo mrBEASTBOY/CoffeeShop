@@ -158,6 +158,14 @@ body::before {
 .btn-c {
   padding: 0.25rem 0.75rem;
   border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: var(--secondary-dark);
+  transition: 0.3s ease-in;
+}
+
+.btn-c:hover {
+  background-color: var(--primary-gray);
 }
 
 .bg-primary-gray {
@@ -206,4 +214,47 @@ body::before {
 
 .text-medium {
   font-size: 0.9rem;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    padding-block-start: 10.25rem;
+    padding-block-end: 5rem;
+  }
+
+  .container {
+    max-width: 750px;
+  }
+
+  .image {
+    left: 24.75rem;
+  }
+
+  .display-grid {
+    grid-template-columns: auto auto;
+  }
+
+  .py-md-20 {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  .image {
+    left: 34.75rem;
+  }
+
+  .display-grid {
+    grid-template-columns: auto auto auto;
+  }
+
+  .py-md-20 {
+    padding-right: 16rem;
+    padding-left: 16rem;
+  }
 }
