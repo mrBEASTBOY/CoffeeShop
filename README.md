@@ -1,4 +1,4 @@
-22222222222222222222222222222222222222222222222222222222222222222☕️ Coffee Collection App
+☕️ Coffee Collection App
 
 Welcome to the Coffee Collection App, a modern Angular-based project that showcases a variety of delicious coffee options. ☕ Explore different roasts, flavors, and types of coffee in a beautifully crafted interface, powered by real-time data!
 
@@ -13,7 +13,7 @@ Welcome to the Coffee Collection App, a modern Angular-based project that showca
   
 📦 Data Source
 All coffee data is fetched from the following public JSON source:
-[Click here for the JSON data](https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json)
+* [Click here for the JSON data](https://raw.githubusercontent.com/devchallenges-io/web-project-ideas/main/front-end-projects/data/simple-coffee-listing-data.json)
 
 Feel free to customize and modify the project. 🍵 Enjoy exploring the Coffee Collection!
 
